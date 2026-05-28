@@ -1,0 +1,61 @@
+/* ============================================================
+   SHE CAN FOUNDATION — GLOBAL STYLES
+   ============================================================ */
+
+:root {
+  --cream:      #fdf6f0;
+  --warm:       #f5e6d8;
+  --rose:       #c9847a;
+  --rose-dark:  #a05a52;
+  --plum:       #3d1f2a;
+  --plum-mid:   #5e3244;
+  --gold:       #c9a96e;
+  --gold-lt:    #e8d5b0;
+  --text:       #2a1520;
+  --muted:      #7a5a64;
+  --error:      #c94a4a;
+  --success:    #3d8f6e;
+  --radius:     12px;
+  --shadow:     0 4px 32px rgba(61,31,42,0.10);
+  --font-head:  'Cormorant Garamond', Georgia, serif;
+  --font-body:  'DM Sans', system-ui, sans-serif;
+  --trans:      0.25s ease;
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+body {
+  font-family: var(--font-body);
+  background: var(--cream);
+  color: var(--text);
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+a { text-decoration: none; color: inherit; }
+button { font-family: var(--font-body); cursor: pointer; }
+
+/* ── ANIMATIONS ─────────────────────────────────────────── */
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(24px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50%       { transform: translateY(-10px); }
+}
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+@keyframes slideUp {
+  from { opacity: 0; transform: translateY(30px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50%       { opacity: 0.5; }
+}
