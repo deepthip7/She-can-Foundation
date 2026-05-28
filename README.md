@@ -185,4 +185,3 @@ REACT_APP_API_URL=http://localhost:5000/api
 
 ---
 
-*Made with 💜 for the She Can Foundation Full Stack Development Internship Task*
